@@ -1,6 +1,17 @@
 import { catsData } from "./data";
 
 const emotionRadios = document.getElementById("emotion-radios");
+// const getImageBtn = document.getElementById("get-image-btn");
+
+emotionRadios.addEventListener("change", highlightCheckedOption);
+
+function highlightCheckedOption(e) {
+  const radios = document.getElementsByClassName("radio");
+  for (let radio of radios) {
+    radio.classList.remove("highlight");
+  }
+  document.getElementById(e.target.id).parentElement.classList.add("highlight");
+}
 
 function getEmotionsArray(cats) {
   const emotionsArray = [];
@@ -14,7 +25,7 @@ function getEmotionsArray(cats) {
   return emotionsArray;
 }
 
-const renderEmotionsRadios = (cats) => {
+function renderEmotionsRadios(cats) {
   const emotions = getEmotionsArray(cats);
   let radioItems = "";
   for (let emotion of emotions) {
@@ -31,7 +42,7 @@ const renderEmotionsRadios = (cats) => {
   `;
   }
   emotionRadios.innerHTML = radioItems;
-};
+}
 
 renderEmotionsRadios(catsData);
 
