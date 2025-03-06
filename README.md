@@ -68,7 +68,10 @@ This project helped reinforce the following **JavaScript concepts**:
 
 ## 📸 Project Preview
 
-_(Feel free to insert a screenshot or link to your project demo here!)_
+<img width="425" alt="image" src="https://github.com/user-attachments/assets/6dbee03d-404c-44f6-aa67-6312bef73fcb" />
+<img width="502" alt="image" src="https://github.com/user-attachments/assets/13241f38-891c-4897-9e0f-8ff60c85f061" />
+
+
 
 ---
 
